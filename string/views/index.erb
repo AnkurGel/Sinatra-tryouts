@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <title>REVERSINATORR!! </title>
+    </head>
+    <body>
+        <h1> Reverse Me.. </h1>
+        <%unless @f.nil?%>
+            <h2>RESULT:<br/></h2>
+            <h3 color="red"> <%=@f%></h3>
+        <%end%>
+        <form action="/" method="POST">
+            <input type="text" name="sent"><br/>
+            <label> <input type="radio" name="choice" value="1" checked="checked">Reverse Sentence</label>
+            <label><input type="radio" name="choice" value="2"> Reverse Words<br/></label>
+            <input type="submit" value="REVERSITT!">
+        </body>
+
